@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e4605ac1.css",
+    "main.js": "/static/js/main.e9619818.js",
+    "static/media/dark-theme-background.jpg": "/static/media/dark-theme-background.765ff3a5a34d6d53a638.jpg",
+    "static/media/Austine  Me.avif": "/static/media/Austine  Me.b0352e9afdced45334f4.avif",
+    "index.html": "/index.html",
+    "main.e4605ac1.css.map": "/static/css/main.e4605ac1.css.map",
+    "main.e9619818.js.map": "/static/js/main.e9619818.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4605ac1.css",
+    "static/js/main.e9619818.js"
+  ]
+}
