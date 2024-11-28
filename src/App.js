@@ -8,6 +8,20 @@ function ContactForm() {
     const [answer, setAnswer] = useState('');
     const [state, handleSubmit] = useForm("xkndqlgr");
 
+
+useEffect(() => {
+  // fetch('hhttps://api.quotable.io/random')
+  // .then(response => response.json())
+  // .then(data => {
+  //   console.log(data)
+  // });
+  // .catch(error){
+  //   console.error(error);
+  // };
+}, [])
+
+
+
     const checkAnswer = (e) => {
         e.preventDefault(); // Prevent default form submission
 
@@ -258,7 +272,7 @@ function App() {
   const Navigation = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [isTop, setIsTop] = useState(true);
-    const [menuOpen, setMenuOpen] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
   
     useEffect(() => {
       const handleScroll = () => {
@@ -424,8 +438,8 @@ const plans = [
           <div className='homeOverlay'>
             <h1>Hello there, I am <strong>Austine Oduk,</strong> <br/></h1>
             <h5>I am a passionate Front-end web developer.</h5>
-            <p>Working at Autokonnect Co. as the lead Website Developer and PM</p>
-            <div className='d-flex flex-row justify-content-center gap-3 p-0'>
+            <small>Working at Autokonnect Co. as the lead Website Developer and PM, I have an eye for user friendly design, responsive websites, and fast, scalable and clean Software</small>
+            <div className='d-flex flex-row justify-content-center gap-3 p-0 fs-4 text-light mt-2'>
                 <a href='https://www.instagram.com/oduk_sr/'><i className="fa-brands fa-instagram"></i></a>
                 <a href='https://www.facebook.com/profile.php?id=100069487444055'><i className="fa-brands fa-facebook-f"></i></a>
                 <a href='https://www.youtube.com/channel/UCPrYwmoy9wVGNwg-dmyCNRQ'><i className="fa-brands fa-youtube"></i></a>
@@ -433,7 +447,7 @@ const plans = [
                 <a href='https://www.blogger.com/blog/posts/205945650435362831?bpli=1&pli=1'><i className="fa-solid fa-blog"></i></a>
             </div>
             <div>
-                <a href='#portfolio'><button className='btn btn-0'>See Portfolio</button> </a> <a href='/media/Documents/resume.pdf'><button className='btn btn-0'>Resume</button></a>
+                <a href='#portfolio'><button className='btn btn-0'>Portfolio</button> </a> <a href='/media/Documents/resume.pdf'><button className='btn btn-0'>Resume</button></a>
             </div>
 
           </div>
@@ -596,6 +610,12 @@ const plans = [
         <i className="fa-brands fa-github icon"></i>
         <div>GitHub</div>
         <div className="followers">1.2k Folowers</div>
+        <button className="button">View profile</button>
+    </div>
+    <div className="socialWrapper alert alert-primary">
+        <i className="fa-brands fa-youtube icon"></i>
+        <div>Youtube</div>
+        <div className="followers">19.72k Subscribers</div>
         <button className="button">View profile</button>
     </div>
 </div>
@@ -800,6 +820,18 @@ const plans = [
 
 
       <ContactForm />
+
+      <h1 className='h1 text-center'>Testimonials</h1>
+        <h6 style={{textAlign: "center"}}>Listen to what people have to say about us</h6>
+      <div className='videoBackground'>
+      <video src="/media/videos/F82-M4-Cinematic-4K.mp4" autoPlay muted loop loading='lazy' />
+            <div>
+              <h2>"We love their creative and laid back style.<br/> Best duo in the industry.” </h2>
+              <p><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon></p>
+              <p><small>~ Austine & J Co.</small></p>
+            </div>
+      <br id='about'/>
+      </div>
       <div>
       <h1 className='h1 text-center'>Blog Posts</h1>
         <h6 style={{textAlign: "center"}}>FEATURED</h6>
